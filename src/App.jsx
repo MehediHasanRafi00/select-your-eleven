@@ -45,7 +45,7 @@ function App() {
         <div className="font-semibold">
           <button
             onClick={() => setToggle(true)}
-            className={`px-6 py-3  border-1 border-[#13131310]  rounded-l-2xl border-r-0 ${
+            className={` px-6 py-3  border-1 border-[#13131310] cursor-pointer  rounded-l-2xl border-r-0 ${
               toggle === true ? "bg-[#E7FE29]" : ""
             }`}
           >
@@ -53,7 +53,7 @@ function App() {
           </button>
           <button
             onClick={() => setToggle(false)}
-            className={`px-5 py-3  border-1 border-[#13131310] rounded-r-2xl border-l-0 ${
+            className={`px-5 py-3  border-1 border-[#13131310] cursor-pointer rounded-r-2xl border-l-0 ${
               toggle === false ? "bg-[#E7FE29]" : ""
             }`}
           >
@@ -64,7 +64,9 @@ function App() {
       {toggle === true ? (
         <Suspense
           fallback={
-            <span className="loading loading-spinner loading-xl"></span>
+            <div className="flex justify-center items-center">
+              <span className="loading loading-spinner loading-xl "></span>
+            </div>
           }
         >
           <AvailablePlayers
