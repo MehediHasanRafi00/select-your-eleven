@@ -21,6 +21,7 @@ const PlayerCard = ({ player, setAvailableBalance, availableBalance,setPurchased
       availableBalance - playerPrice
     );
     setPurchasedPlayer([...purchasedPlayer,playerData])
+    toast("Player Purchased!")
   };
   return (
     <div className="card bg-base-100 shadow-sm p-4">

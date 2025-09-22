@@ -4,7 +4,7 @@ import currencyImg from "../../assets/Currency.png";
 
 const Navbar = ({availableBalance}) => {
     return (
-        <div className="navbar max-w-[1200px] mx-auto mb-20">
+        <div className="navbar max-w-[1200px] mx-auto mb-10">
         <div className="flex-1">
           <a className="text-xl">
             <img className="w-[70px]" src={navImg} alt="" />
